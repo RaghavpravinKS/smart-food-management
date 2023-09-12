@@ -25,8 +25,8 @@ The stream.py file just starts a server at the specified port on the RPi. The ma
 ##### The post_proc_clinet.py:
 This code works on the Haarcascades method of OpenCV. This is one of the most common methods used in real-world applications to identify and classify different types of objects in the given frame to the program.
 
-### Connection of omponents:
-![[smart-waste-food-management-system_bb 2.jpg]]
+### Connection of components:
+![image](smart-waste-food-management-system_bb.jpg)
 Components shown in picture:
 - HX711
 - Raspberry Pi Model 3
