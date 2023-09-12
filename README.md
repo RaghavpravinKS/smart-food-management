@@ -30,6 +30,7 @@ This code works on the Haarcascades method of OpenCV. This is one of the most co
 Components shown in picture:
 - HX711
 - Raspberry Pi Model 3
+
 Note: The connection of camera is not shown in the pictue.
 
 ### Installation:
