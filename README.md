@@ -86,7 +86,12 @@ To set the IP address in the stream.py file first you have to identify your RPi'
 ipconfig
 ```
 Copy the iPv4 address and replace the address in the code. Now your RPi's camera is ready to stream it's camera live.
-Note: The default resolution of camera is set to 320x240. You can change this accordingly to your requirements.
+Note: The default resolution of camera is set to 320x240. You can change this accordingly to your requirements in the code.
+
+```python
+capture.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
+capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
+```
 
 #### For weight sensor:
 
