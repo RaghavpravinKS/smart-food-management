@@ -22,9 +22,12 @@ This project uses Raspberry Pi to continuously monitor the weight and contents i
 
 ### Working of code:
 
+This project helps you to setup a camera and weighing scale and integrate it to your Raspberry Pi. It also enables you to send this data over Wi-fi.
+
 The stream.py file just starts a server at the specified port on the RPi. The main.py file has both the code integrated, for weight measurement and stream of live footage to the server. It also prints an alert message if the weight measured exceeds a certain amount of threshold.
 
-Note: Uncomment the commented to connect to a remote desktop to get alerts through Wi-fi.
+>[!NOTE]  
+>Uncomment the commented to connect to a remote desktop to get alerts through Wi-fi.
 
 #### The post_proc_clinet.py:
 This code works on the Haarcascades method of OpenCV. This is one of the most common methods used in real-world applications to identify and classify different types of objects in the given frame to the program.
@@ -45,7 +48,8 @@ Picture of load cell:
 
 ![image](load_cell.jpg)
 
-Note: The connection of camera is not shown in the pictue.
+>[!NOTE] 
+>The connection of camera shown in the pictue is just for representation purpose. The actual connection is done using a CSI ribbon.
 
 ### Installation:
 
@@ -64,6 +68,11 @@ Install required python packages in RPi
 pip install opencv-python
 pip install pyshine==0.0.9
 ```
+Before running the Python script, to access the camera we need to enable it. To do this head to 
+
+Main Menu > Raspberry Pi Configuration > Interfaces and enable the camera. 
+
+Reboot you Pi so that the changes you made get reflected.
 
 After installing all the required libraries on RPi, run the following command:
 ```bash
@@ -95,7 +104,8 @@ A sample for detecting human faces in the video footage is also given in the rep
 python3 post_proc_client.py
 ```
 
-Note: This file uses the haar cascades method to identify human faces. The xml file for opencv is obtained from an open-source [repository](https://github.com/anaustinbeing/haar-cascade-files/tree/master).
+>[!NOTE]  
+>This file uses the haar cascades method to identify human faces. The xml file for opencv is obtained from an open-source [repository](https://github.com/anaustinbeing/haar-cascade-files/tree/master).
 
 ### References:
 
