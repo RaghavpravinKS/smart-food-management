@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyShine Live Streaming</title>
+    <style>
+        body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8fa9f0; 
+            color: #fff; 
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh; 
+            border-radius: 10px; 
+            overflow: hidden; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Live Streaming from Raspberry Pi</h1>
+    </header>
+    <div class="video-container">
+        <img src="stream.mjpg" width="640" height="480" autoplay playsinline>
+    </div>
+</body>
+</html>

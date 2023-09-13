@@ -4,15 +4,19 @@ from HX711 import SimpleHX711, Mass
 import threading
 import socket
 
-# HTML template for displaying the video stream in a web page
-HTML = """<html><head><title>PyShine Live Streaming</title></head><body><center><h1> PyShine Live Streaming using OpenCV </h1></center><center><img src="stream.mjpg" width='640' height='480' autoplay playsinline></center></body></html>"""
+HTML = './index.html'
 
+def read_html_file(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
+    
 # Define the threshold for weight measurement
-THRESHOLD_WEIGHT_OZ = 5.0
+THRESHOLD_WEIGHT_KG = 5.0
 wifi_server_port = 8500
 def video_streaming():
     StreamProps = ps.StreamProps()
-    StreamProps.set_Page(StreamProps, HTML)  
+    html_content = read_html_file(HTML)
+    StreamProps.set_Page(StreamProps, html_content)  
     address = ('192.168.25.89', 9000)  
     try:
         StreamProps.set_Mode(StreamProps, 'cv2')  
@@ -36,23 +40,23 @@ def video_streaming():
 
 def weight_measurement():
     with SimpleHX711(2, 3, -370, -367471) as hx:
-        hx.setUnit(Mass.Unit.GRAM)
+        hx.setUnit(Mass.Unit.KILOGRAM)
 
         # zero the scale
         hx.zero()
 
         # Create a socket to send weight data over Wi-Fi
-        wifi_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        wifi_socket.connect(('192.168.25.89', wifi_server_port))
+        # wifi_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # wifi_socket.connect(('192.168.25.89', wifi_server_port))
 
         while True:
-            weight_oz = hx.weight(35) 
+            weight_kg = hx.weight(35) 
 
-            if weight_oz > THRESHOLD_WEIGHT_OZ:
-                print(f'Weight exceeded threshold: {weight_oz} oz')
+            if weight_kg > THRESHOLD_WEIGHT_KG:
+                print(f'Weight exceeded threshold: {weight_kg} kg')
 
                 # Send the weight data over Wi-Fi
-                wifi_socket.send(f'Weight exceeded threshold: {weight_oz} oz'.encode('utf-8'))
+                # wifi_socket.send(f'Weight exceeded threshold: {weight_oz} oz'.encode('utf-8'))
 
 if __name__ == '__main__':
     video_thread = threading.Thread(target=video_streaming)
