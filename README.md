@@ -34,6 +34,8 @@ This code works on the Haarcascades method of OpenCV. This is one of the most co
 
 ### Connection of components:
 ![image](smart-waste-food-management-system_bb.jpg)
+>[!NOTE] 
+>The connection of camera shown in the pictue is just for representation purpose. The actual connection is done using a CSI ribbon.
 Components shown in picture:
 - HX711
 - Raspberry Pi Model 3
@@ -47,9 +49,6 @@ Corresponding pins on Load Cell:
 Picture of load cell:
 
 ![image](load_cell.jpg)
-
->[!NOTE] 
->The connection of camera shown in the pictue is just for representation purpose. The actual connection is done using a CSI ribbon.
 
 ### Installation:
 
