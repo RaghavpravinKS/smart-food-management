@@ -10,6 +10,7 @@
 >Cost for Raspberry Pi and ADC are from Robu.in and Load Cell from Amazon
 
 ### Links for components:
+
 #### Raspberry Pi 4B
 
 - [Robu.in](https://robu.in/product/raspberry-pi-4-model-b-with-4-gb-ram/)
