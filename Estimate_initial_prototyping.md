@@ -5,13 +5,16 @@
 | Load Cell 100 kg | 1 | ₹ 565.00 |
 | HX711 | 1 | ₹ 48.00 |
 | Camera | 1 | ₹ 949.00 |
-| | Total (without delivery charges and tax) | ₹ 6,911.00 |
+| Micro SD card | 1 | ₹ 400.00 |
+| HDMI Cable | 1 | ₹ 409.00 |
+| | Total (without delivery charges and tax) | ₹ 7,720.00 |
 
 >[!NOTE]   
 >Cost for Raspberry Pi, Camera and ADC are from Robu.in and Load Cell from Amazon
 >Camera Model: OV5647
 
 ### Links for components:
+
 #### Raspberry Pi 4B
 
 - [Robu.in](https://robu.in/product/raspberry-pi-4-model-b-with-4-gb-ram/)
@@ -33,3 +36,11 @@
 - [Robu.in](https://robu.in/product/ov5647-5mp-ir-cut-camera-for-raspberry-pi-3-with-automatic-day-night-mode-switching/)
 - [Robu.in](https://robu.in/product/arducam-16mp-imx519-noir-camera-module-for-all-raspberry-pi-models/)
 - [Robu.in](https://robu.in/product/5mp-ov5647-sensor-adjustable-wide-angle-fish-eye-lens-night-vision-camera-for-raspberry-pi-3-b/)
+
+#### Micro SD/ SDHC
+
+- [Robu.in](https://robu.in/product/sandisk-micro-sd-sdhc-32gb-class-10-memory-card-with-adapter/)
+
+#### Micro HDMI to Standard HDMI
+
+- [Robu.in](https://robu.in/product/micro-hdmi-male-to-standard-hdmi-male-cable-for-raspberry-pi-4/)

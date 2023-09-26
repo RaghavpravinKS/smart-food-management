@@ -15,7 +15,7 @@ def detect_humans(frame):
 
     return frame
 
-stream_url = "http://192.168.25.89:9000/stream.mjpg"
+stream_url = "http://192.168.0.149:9000/stream.mjpg"
 cap = cv2.VideoCapture(stream_url)
 
 while True:
