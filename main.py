@@ -3,6 +3,7 @@ import pyshine as ps
 from HX711 import SimpleHX711, Mass
 import threading
 import socket
+import face_recognition as fr
 
 HTML = './index.html'
 
