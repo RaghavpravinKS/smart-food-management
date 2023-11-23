@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import LabelEncoder
 from imageio import imread
 from skimage.transform import resize
-from keras.models import load_model
+# from keras.models import load_model
 import joblib 
 import inception_model_keras as facenet
 
@@ -115,4 +115,5 @@ def infer(le,clf,margin = 10):
         vc.release()
         cv2.destroyAllWindows()
 
-infer(le = loaded_label_encoder, clf = loaded_classifier)
+if __name__ == "__main__":
+    infer(le = loaded_label_encoder, clf = loaded_classifier)
