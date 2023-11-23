@@ -6,7 +6,6 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import LabelEncoder
 from imageio import imread
 from skimage.transform import resize
-# from keras.models import load_model
 import joblib 
 import inception_model_keras as facenet
 

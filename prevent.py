@@ -1,5 +1,5 @@
 import face_recognition as fr
-import hx711
+from hx711 import HX711  
 import RPi.GPIO as GPIO
 import cv2
 import numpy as np
