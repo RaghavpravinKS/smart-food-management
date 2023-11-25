@@ -19,7 +19,7 @@ def main():
         capture.set(cv2.CAP_PROP_BUFFERSIZE, 4)
         capture.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
         capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
-        capture.set(cv2.CAP_PROP_FPS, 30) 
+        capture.set(cv2.CAP_PROP_FPS, 30)   
 
         StreamProps.set_Capture(StreamProps, capture) 
         StreamProps.set_Quality(StreamProps, 90) 

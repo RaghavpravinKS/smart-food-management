@@ -1,0 +1,9 @@
+keras==2.10.0
+tensorflow
+scikit-image
+opencv-python
+RPi.GPIO
+matplotlib
+scikit-learn
+imageio
+hx711
