@@ -14,7 +14,7 @@ This project uses Raspberry Pi to continuously monitor the weight and contents i
 ### Software:
 
 1. Raspbian installed in the RPi
-2. RPi weight sensor library compatible with HX711 [(can be found here)](https://pypi.org/project/hx711/)
+2. RPi weight sensor library compatible with HX711 [(can be found here)](https://github.com/gandalf15/HX711)
 3. Camera Library for CSI camera to work
 4. OpenCV library for detection of human beings
 5. pyshine library for streaming of live footage through Wi-fi
@@ -116,11 +116,9 @@ python3 post_proc_client.py
 
 Anaustinbeing. “Anaustinbeing/Haar-Cascade-Files: A Complete Collection of Haar-Cascade Files. Every Haar-Cascades Here!” GitHub. Accessed September 13, 2023. https://github.com/anaustinbeing/haar-cascade-files/tree/master.
 
-Endail. “Endail/HX711-Rpi-Py: Python Bindings for Raspberry Pi HX711 C++ Library.” GitHub. Accessed September 13, 2023. https://github.com/endail/hx711-rpi-py/tree/master.
+gandalf15. (n.d.). Gandalf15/HX711: Read HX711 ADC for weigh scales on Rasperry Pis. GitHub. https://github.com/gandalf15/HX711 
 
 GitHub. Accessed September 13, 2023. https://github.com/savazeb/pyshine-example/blob/master/Stream.py.
-
-“HX711.” PyPI. Accessed September 13, 2023. https://pypi.org/project/hx711/.
 
 Jude, Felix, jude mark 2, Jr, Greg, Daniel, Billynux, et al. “Build a Digital Raspberry Pi Scale (with Weight Sensor HX711).” Tutorials for Raspberry Pi, July 18, 2023. https://tutorials-raspberrypi.com/digital-raspberry-pi-scale-weight-sensor-hx711/.
 
